@@ -8,7 +8,7 @@ st.caption("Your AI guide for home health documentation")
 
 client = OpenAI(
     base_url="https://integrate.api.nvidia.com/v1",
-    api_key=st.secrets["NVIDIA_API_KEY"]
+    api_key=st.secrets["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"]
 )
 
 SYSTEM_PROMPT = """You are an experienced home health nursing mentor with 
