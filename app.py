@@ -1,6 +1,5 @@
 import streamlit as st
 from openai import OpenAI
-import os
 
 st.set_page_config(page_title="Nursing Mentor", page_icon="🏥")
 
@@ -23,7 +22,7 @@ how to properly document home health visits including:
 
 Give clear, practical, specific answers. Always explain WHY something 
 is documented a certain way. Be encouraging but accurate. 
-Never give actual medical advice — only documentation guidance."""
+Never give actual medical advice - only documentation guidance."""
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -57,17 +56,3 @@ if prompt := st.chat_input("Ask your documentation question here..."):
     st.session_state.messages.append(
         {"role": "assistant", "content": response}
     )
-```
-
-5. Click **Commit new file**
-
----
-
-**File 2 — Create `requirements.txt`**
-
-1. Click **Add file → Create new file**
-2. Name it `requirements.txt`
-3. Paste this:
-```
-streamlit
-openai
